@@ -1,0 +1,281 @@
+*{
+    box-sizing:border-box
+}
+
+@font-face {
+    font-family: 'romanica'; /*textos longos*/
+    src: url(/romanica/Romanica.ttf);
+}
+
+@font-face {
+    font-family: 'augustus'; /*titulos*/
+    src: url(/augustus/AUGUSTUS.TTF);
+}
+
+@font-face {
+    font-family: 'dominica'; /*1 opção de titulos citações biblicas*/
+    src: url(/dominican/DOMINICA.TTF);
+}
+
+@font-face {
+    font-family: 'caligo'; /*2ª opção de titulos citações biblicas*/
+    src: url(/caligo/font_Caligo1.0.ttf);
+}
+
+html{
+    scroll-behavior:smooth
+}
+
+body{
+    margin:0;
+    background:#faf9f5;
+    color:#333;
+    font-family: 'romanica';
+    line-height:1.75
+}
+
+.site-header{
+    background:linear-gradient(135deg,#17324d,#244e70);
+    color:#fff;
+    text-align:center;
+    padding:58px 20px 52px;
+    position:relative;
+    overflow:hidden
+}
+
+.site-header:after{content:"✦";
+    position:absolute;
+    right:9%;
+    top:18px;
+    color:rgba(201,162,39,.35);
+    font-size:80px
+}
+    
+.cross{
+    font-size:38px;
+    color:#e2c45a;
+    margin-bottom:8px
+}
+
+.site-header h1{
+    margin:0;
+    font-size:clamp(2rem,6vw,3.5rem);
+    letter-spacing:2px
+}
+
+.site-header .subtitle{
+    max-width:650px;
+    margin:12px auto 0;
+    font-style:italic;
+    color:#e8eef3
+}
+
+.container{
+    width:min(940px,92%);
+    margin:0 auto
+}
+
+.intro{
+    text-align:center;
+    padding:42px 0 25px
+}
+
+.intro h2{
+    color:#17324d;
+    font-size:1.8rem;
+    margin-bottom:5px
+}
+
+.intro p{
+    color:#666
+}
+
+.reflexoes{
+    display:grid;
+    gap:18px;
+    padding-bottom:55px
+}
+
+.card{
+    display:block;
+    text-decoration:none;
+    color:inherit;
+    background:#fff;
+    border:1px solid #e7e1d3;
+    border-left:5px solid #c9a227;
+    border-radius:12px;
+    padding:22px 24px;
+    box-shadow:0 5px 18px rgba(23,50,77,.07);
+    transition:.2s,
+}
+
+.card:hover{
+    transform:translateY(-3px);
+    box-shadow:0 9px 25px rgba(23,50,77,.13);
+    border-left-color:#17324d
+}
+
+.card h3{
+    margin:0;
+    color:#17324d;
+    font-size:1.35rem;
+}
+
+.card .versiculo{
+    color:#8b7020;
+    font-size:.95rem;
+    font-style:italic;
+    margin:5px 0;
+}
+
+.card .descricao{
+    margin:7px 0 0;
+    color:#666
+}
+
+.ler{
+    display:inline-block;
+    margin-top:10px;
+    color:#17324d;
+    font-weight:bold
+}
+
+.page{
+    padding:30px 0 60px
+}
+
+.voltar{
+    display:inline-block;
+    text-decoration:none;
+    color:#17324d;
+    font-weight:bold;
+    margin-bottom:28px
+}
+
+.voltar:hover{
+    text-decoration:underline
+}
+
+.reflection{
+    background:#fff;
+    border-radius:14px;
+    padding:clamp(25px,5vw,55px);
+    box-shadow:0 6px 25px rgba(23,50,77,.08);
+    border-top:5px solid #c9a227
+}
+
+.reflection .categoria{
+    text-transform:uppercase;
+    letter-spacing:2px;
+    color:#9a7b18;
+    font-size:.8rem;
+    font-weight:bold
+}
+
+.reflection h1{
+    color:#17324d;
+    font-size:clamp(2rem,5vw,3rem);
+    line-height:1.2;
+    margin:7px 0;
+}
+
+.referencia{
+    font-style:italic;
+    color:#777;
+    margin-bottom:28px
+}
+
+.catecismo{
+    background:#f4f7f8;
+    border-left:4px solid #17324d;
+    padding:18px 22px;
+    margin:25px 0;
+    /*text-indent: 50px;*/
+    /*font-style:italic*/
+}
+
+/*sub{
+    margin: 20px 60px;
+    text-indent: 0px;
+    text-align: justify;
+}*/
+
+.catecismo_fonte{
+    color: #777;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    margin-top: 18px;
+    margin-right: 25px;
+    font-style: italic;
+}
+
+.catecismo_fonte::before{
+    content: "";
+    width: 35px;
+    height: 1px;
+    background-color: #777;
+}
+
+.reflection h2{
+    color:#17324d;
+    margin-top:32px;
+    font-family: 'dominica';
+}
+
+.biblia{
+    background:#fff8df;
+    border:1px solid #eadba9;
+    border-radius:10px;
+    padding:22px;
+    margin-top:30px
+}
+
+.biblia h2{
+    margin-top:0;
+    color:#8b7020
+}
+
+.biblia h3{
+    margin: 40px;
+    text-align: center;
+}
+    
+.frase{font-size:1.2rem;
+    text-align:center;
+    font-style:italic;
+    color:#17324d;
+    padding:25px 10px
+}
+
+.final-voltar{
+    text-align:center;
+    margin-top:35px
+}
+
+.footer{
+    text-align:center;
+    background:#17324d;
+    color:#dfe8ee;
+    padding:28px 20px;
+    font-size:.9rem
+}
+
+.footer .cross{
+    font-size:25px
+}
+
+.home-link{
+    display:inline-block;
+    background:#17324d;
+    color:#fff;text-decoration:none;
+    padding:11px 20px;
+    border-radius:30px
+}
+
+.home-link:hover{
+    background:#244e70
+}
+
+@media(max-width:600px){.site-header{padding:42px 16px}.card{padding:19px}.reflection{padding:24px 20px}.intro{padding-top:30px}}
