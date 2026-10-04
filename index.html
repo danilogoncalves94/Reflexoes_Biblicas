@@ -7,7 +7,10 @@
 <title>Luz da Palavra — Reflexões Bíblicas</title>
 <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/scrollreveal"></script>
-<script src="script.js"></script>
+<script src="script.js" defer></script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+</style>
 <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
@@ -22,6 +25,11 @@
   <section class="intro">
     <h2>Reflexões Bíblicas</h2>
     <p>Medite na Palavra de Deus e permita que ela ilumine sua caminhada.</p>
+    <div class="busc">
+      <div class="buscador">
+        <input type="text" id="buscador" spellcheck="false" placeholder="🔎  Buscar reflexão...">
+      </div>
+    </div>
   </section>
 
   <section class="reflexoes">
